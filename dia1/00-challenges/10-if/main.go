@@ -18,15 +18,6 @@ func miniMaxSum(arr []int32) {
 	var max int64 = int64(arr[0])
 	var min int64 = int64(arr[0])
 
-	for _, num := range arr {
-		sum = sum + int64(num)
-		if int64(num) > max {
-			max = int64(num)
-		}
-		if int64(num) < min {
-			min = int64(num)
-		}
-	}
 	fmt.Printf("%d %d", sum-max, sum-min)
 
 }
