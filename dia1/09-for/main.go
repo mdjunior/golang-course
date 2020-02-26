@@ -29,4 +29,6 @@ func main() {
 	for index, value := range pow {
 		fmt.Printf("2^%d = %d\n", index, value)
 	}
+
+	// Loops em assembly: https://medium.com/a-journey-with-go/go-how-are-loops-translated-to-assembly-835b985309b3
 }
