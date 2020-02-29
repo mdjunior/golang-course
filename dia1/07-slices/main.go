@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
 	// slices - são listas que podem crescer de tamanho
@@ -25,5 +28,18 @@ func main() {
 	todasAsLinguagens[2] = "python"
 	fmt.Printf("todasAsLinguagens após alteração: %v\n", todasAsLinguagens)
 	fmt.Printf("civilUFRJ após alteração: %v\n", civilUFRJ)
+
+	// Comparar slices não é uma tarefa fácil, não dá para utilizar o operador ==.
+	//   Só podemos comparar os slices usando == ao valor nil.
+	if linguagens != nil {
+		manoelLangs := []string{"Perl", "python"}
+
+		// Para comparar essas estruturas, vamos usar o reflect.DeepEqual.
+		//   Veja mais detalhes sobre como o DeepEqual funciona aqui: https://golang.org/pkg/reflect/#DeepEqual
+		if reflect.DeepEqual(manoelLangs, linguagens) {
+			fmt.Println("É igual")
+		}
+
+	}
 
 }
