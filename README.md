@@ -34,3 +34,4 @@ A seguir, uma lista de referências que podem complementar os estudos de Go.
 - awesome-golang-security. [s.l.]: Github, [s.d.]. Disponível em: <https://github.com/guardrailsio/awesome-golang-security>.
 - BlackHat Go Code Samples. [s.l.]: Github, [s.d.]. Disponível em: <https://github.com/blackhat-go/bhg>.
 - JAMES, Chris. Aprenda Golang com testes. Disponível em: <https://larien.gitbook.io/aprenda-go-com-testes/>.
+- HAKIMIAN, Parsia. Hacking with Go. [s.l.]: Github, [s.d.]. Disponível em: <https://github.com/parsiya/Hacking-with-Go>.
